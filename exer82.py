@@ -33,7 +33,7 @@ if escolha == "div":
         num2 = float(input("escolha um numero diferente de zero: "))
         if num1 !=0 and num2 != 0:
             resultado = num1 / num2
-            break
+            #break
 
 #validacao falha
  # if num1 == 0 or num2 == 0: 
