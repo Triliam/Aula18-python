@@ -13,10 +13,6 @@ while num != 0:
     if numeros == 0: #coloca essa condicao no inicio do loop, pro numero 0 nao entrar nas operacoes matematicas
         break
 
-    qtdNumeros = qtdNumeros + 1
-    soma = soma + numeros
-    media = soma / qtdNumeros
-
     count = count + 1
     if count == 1:
         maior = numeros
@@ -26,8 +22,10 @@ while num != 0:
         maior = numeros
     if numeros < menor:
         menor = numeros
-
-
+    
+    qtdNumeros = qtdNumeros + 1
+    soma = soma + numeros
+    media = soma / qtdNumeros
 
 print(" o maior eh: ", maior, ". E o menor eh: ", menor, ". A soma é: ", soma, ". E a media eh: ", media)
 
