@@ -8,7 +8,7 @@ num = 1
 while num != 0:
     numeros = int(input("Digite os numeros, quando quiser parar aperte 0: "))
     
-    if numeros >= 0 and numeros <=25:
+    if numeros >= 0 and numeros <=25: # o 0 entra na contagem, mas o loop encerra, melhor se fosse de 1 ate 25, ou outra condicao pra quebrar o loop
         qtd1 = qtd1 + 1
     if numeros >= 26 and numeros <= 50:
         qtd2 = qtd2 + 1
