@@ -3,8 +3,6 @@ qtd2 = 0
 qtd3 = 0
 qtd4 = 0
 
-num = 1
-
 while True: # usando True - forma mais elegante de criar o loop
     numeros = int(input("Digite os numeros, quando quiser parar aperte 0: "))
     
