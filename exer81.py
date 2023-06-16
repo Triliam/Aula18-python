@@ -23,18 +23,22 @@ while escolha != "soma" and escolha != "sub" and escolha != "div" and escolha !=
 
 num1 = float(input("Escolha um numero: "))
 num2 = float(input("Escolha outro numero: "))
+
 if escolha == "soma":
     resultado = somar(num1, num2)
-    #resultado = num1 + num2
+
 if escolha == "sub":
     resultado =  num1 - num2
+
 if escolha == "div":
-    resultado = subs(num1, num2)
-    # if num1 == 0 or num2 == 0:
-    #     print("num invalidos, escolha outros: ")
-    #     num1 = float(input("escolha um numero diferente de zero: "))
-    #     num2 = float(input("escolha um numero diferente de zero: "))
-    #     resultado = num1 / num2
+    while num1 == 0 or num2 == 0:
+        print("num invalidos, escolha outros: ")
+        num1 = float(input("escolha um numero diferente de zero: "))
+        num2 = float(input("escolha um numero diferente de zero: "))
+        if num1 !=0 and num2 != 0:
+            resultado = num1 / num2
+            break
+   
 if escolha == "mult":
     resultado = num1 * num2
 
