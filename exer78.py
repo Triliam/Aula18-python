@@ -3,15 +3,14 @@ menor = 0
 soma = 0
 media = 0
 
-num = 1
 count = 0
 qtdNumeros = 0
 
-while num != 0:
+while True:
     numeros = int(input("Digite os numeros, qnd quiser parar digite 0:"))
 
     if numeros == 0: #coloca essa condicao no inicio do loop, pro numero 0 nao entrar nas operacoes matematicas
-        break
+        break #usa o break pra quebrar o loop, break tbm impede de ler as linhas a baixo dentro do loop
 
     count = count + 1
     if count == 1:

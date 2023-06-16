@@ -2,7 +2,7 @@ num1 = 0
 num2 = 0
 resultado = 0
 escolha = ""
-#com funções e cmo validaçoes, sem funçoes e com validaçoes esta no exer82
+#com funções e com validaçoes, sem funçoes e com validaçoes esta no exer82
 def somar(num1, num2):
     return num1 + num2
 
