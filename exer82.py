@@ -4,12 +4,13 @@ resultado = 0
 
 escolha = ""
 
-while escolha != "soma" and escolha != "sub" and escolha != "div" and escolha != "mult":
+while True:
     escolha = str(input("Escolha uma operacao aritimetica, soma, sub, div, mult: "))
     if escolha != "soma" and escolha != "sub" and escolha != "div" and escolha != "mult":
         print("opcao inválida! Faça uma escolha válida")
     else:
         print("a opçao escolhida eh: ", escolha)
+        break
 
 #validacao falha
 # escolha = str(input("Escolha uma operacao aritimetica, soma, sub, div, mult: "))
@@ -27,13 +28,14 @@ if escolha == "sub":
     resultado =  num1 - num2
 
 if escolha == "div":
-    while num1 == 0 or num2 == 0:
-        print("num invalidos, escolha outros: ")
-        num1 = float(input("escolha um numero diferente de zero: "))
-        num2 = float(input("escolha um numero diferente de zero: "))
-        if num1 !=0 and num2 != 0:
+    while True:
+        if num1 == 0 or num2 == 0:
+            print("num invalidos, escolha outros: ")
+            num1 = float(input("escolha um numero diferente de zero: "))
+            num2 = float(input("escolha um numero diferente de zero: "))
+        else:
             resultado = num1 / num2
-            #break
+            break
 
 #validacao falha
  # if num1 == 0 or num2 == 0: 
